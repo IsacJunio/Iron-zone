@@ -1,0 +1,98 @@
+/* Geral */
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main:rgb(231, 226, 226);
+  --rodape:black;
+  --botao:rgb(143, 17, 17);
+  --text-botao:white;
+  --titulo:black;
+  --paragrafo:rgb(97, 97, 97);
+}
+
+body {
+  background: var(--main);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Nave Bar */
+nav{
+  background: var(--rodape);
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  border-radius: 50%;
+  width: 120px;
+  padding: 10px;
+}
+
+.nav__ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-right: 60px;
+}
+
+.nav__ul li a{
+  text-decoration: none;
+  color: var(--text-botao);
+  font-size: 30px;
+  transition: .5s;
+}
+
+.nav__ul li a:hover {
+  color: var(--botao);
+}
+
+/* Main */
+#main{
+  max-width: 100%;
+  margin-top: 0px;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__img{
+  margin: 10px;
+  padding-right: 50px;
+}
+.main__img img{
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px black;
+}
+
+.main__text{
+  font-weight: 600;
+  padding-left: 70px;
+}
+
+.main__text h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  justify-items: start;
+}
+
+.main__text p{
+  line-break: normal;
+  width: 900px;
+  font-size: 30px;
+}
