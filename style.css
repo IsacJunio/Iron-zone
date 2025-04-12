@@ -62,8 +62,8 @@ button:hover{
 #btnTopo {
   position: fixed;
   display: none;
-  right: 10px;
-  bottom: 10px;
+  right: 30px;
+  bottom: 20px;
   width: 50px;
   height: 40px;
 }
@@ -267,6 +267,7 @@ nav img {
   }
   .sobre__texto{
   justify-content: center;
+  padding-left: 20px;
   width: 400px;
   }
   .sobre__texto h2{
@@ -274,6 +275,9 @@ nav img {
   }
   .sobre__texto p{
     width: 300px;
+  }
+  .btn__sobre{
+    padding-left: 20px;
   }
 }
 
