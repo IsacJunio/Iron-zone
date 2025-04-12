@@ -20,7 +20,9 @@ html{
 }
 
 section{
-  height: 100vh;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-shadow: 0px 2px 10px black;
 }
 
@@ -165,6 +167,9 @@ nav img {
 }
 
 @media (max-width:450px){
+   #main{
+    height: 100%;
+   }
    .main__container{
     display: block;
    }
@@ -205,6 +210,7 @@ nav img {
   justify-content: center;
   justify-items: center;
   padding-top: 60px;
+  height: 100%;
 }
 
 #sobre h2{
@@ -235,19 +241,27 @@ nav img {
 .sobre__texto{
   line-break: normal;
   width: 800px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: 600;
 }
 
+.btn__sobre {
+  width: auto;
+}
+
 @media (max-width:450px){
+  #sobre{
+    height: 100%;
+  }
   .sobre__container{
     display: block;
     margin: auto;
     justify-items: center;
   }
   .sobre__container img{
-    width: 200px;
+    width: 300px;
+    height: 300px;
     padding-left: 10px;
   }
   .sobre__texto{
@@ -259,5 +273,44 @@ nav img {
   }
   .sobre__texto p{
     width: 300px;
+  }
+}
+
+/* Parcerias */
+#parceria {
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 60px;
+}
+
+#parceria h2{
+  margin-top: 23px;
+  font-size: 30px;
+}
+
+.parceria__container{
+  margin-top: 20px;
+  max-width: 100%;
+  margin-left: 20px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.parceria__container img{
+  width: auto;
+  height: 100px;
+}
+
+@media (max-width:450px){
+  #parceria{
+    height: auto;
+  }
+  .parceria__container img{
+    height: 50px;
   }
 }
