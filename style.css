@@ -367,14 +367,14 @@ nav img {
 }
 
 .price {
-  font-size: 3.75rem;
+  font-size: 2.45rem;
   line-height: 1;
   font-weight: 700;
   color: black;
 }
 
 .desc {
-  margin-top: 0.75rem;
+  margin-top: 0.70rem;
   margin-bottom: 0.75rem;
   line-height: 1.625;
   color: black;
@@ -402,6 +402,7 @@ nav img {
 
 .action {
   width: 150px;
+  height: auto;
   font-size: 17px;
   border: none;
   outline: none;
@@ -483,4 +484,88 @@ nav img {
     letter-spacing: 0.05em;
     color: var(--text-botao);
   }
+}
+
+/* Contatos */
+#contato {
+  justify-content: center;
+  justify-items: center;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.contatos__formas {
+  max-width: 100%;
+  gap: 40px;
+  justify-items: center;
+}
+
+.contato__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* espaço entre os blocos */
+  padding: 20px;
+  background-color: var(--main);
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px black;
+}
+
+.contato_icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.contato__form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn__form {
+  padding: 10px;
+  background-color: var(--botao);
+  color: white;
+  border: none;
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn__form:hover {
+  background-color: var(--botao-hover);
+}
+
+
+@media (max-width:450px){
+  .contato__container{
+    width: 300px;
+  }
+}
+
+/* Footer */
+footer {
+  justify-items: center;
+  background: black;
+}
+
+footer p {
+  color: white;
 }
