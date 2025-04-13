@@ -319,3 +319,168 @@ nav img {
     height: 50px;
   }
 }
+
+/* Planos */
+
+#plano{
+  justify-items: center;
+}
+
+#plano h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.plano__container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+/* From Uiverse.io by Yaya12085 */ 
+.card {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 2rem;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  background-color: var(--main);
+  padding: 1.5rem;
+  box-shadow:  0 0 15px black;
+}
+
+.header {
+  display: flex;
+  flex-direction: column; 
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: black;
+}
+
+.price {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+  color: black;
+}
+
+.desc {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+  color: black;
+}
+
+.lists {
+  margin-bottom: 1.5rem;
+  flex: 1 1 0%;
+  color: black;
+}
+
+.lists .list {
+  margin-bottom: 0.5rem;
+  display: flex;
+  margin-left: 0.5rem
+}
+
+.lists .list svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  color: black;
+}
+
+.action {
+  width: 150px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: black;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-botao);
+}
+
+@media (max-width:450px){
+  .plano__container{
+    display: block;
+  }
+  .card{
+    width: 300px;
+  }
+  title {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: black;
+  }
+  
+  .price {
+    font-size: 2.0rem;
+    line-height: 1;
+    font-weight: 700;
+    color: black;
+  }
+  
+  .desc {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.625;
+    color: black;
+  }
+  
+  .lists {
+    margin-bottom: 1.5rem;
+    flex: 1 1 0%;
+    color: black;
+  }
+  
+  .lists .list {
+    margin-bottom: 0.5rem;
+    display: flex;
+    margin-left: 0.5rem
+  }
+  
+  .lists .list svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    color: black;
+  }
+  
+  .action {
+    width: 150px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 0.25rem;
+    background-color: black;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--text-botao);
+  }
+}
