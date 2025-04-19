@@ -114,6 +114,15 @@ nav img {
   nav img{
     padding: 0;
     justify-content: center;
+    box-shadow: 0 2px 20px white;
+    width: 80px;
+    margin-left: 160px;
+  }
+
+  nav{
+    background: transparent;
+    position: absolute;
+    
   }
 }
 
@@ -745,6 +754,7 @@ nav img {
   }
 
   .main__img {
+    margin-top: 80px;
     padding: 0;
     display: flex;
     justify-content: center;
