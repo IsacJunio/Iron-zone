@@ -11,3 +11,18 @@ window.onscroll = function () {
 function voltarTopo() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+//Música
+const audio =document.getElementById("musica");
+const btnMusica = document.getElementById("btnMusica");
+
+btnMusica.addEventListener("click", ()=>{
+  if(audio.paused){
+    audio.play();
+    btnMusica.textContent = "⏸️"
+  }else{
+    audio.pause();
+    btnMusica.textContent = "🎵"
+  }
+
+})
